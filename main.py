@@ -121,7 +121,7 @@ async def resume(ctx):
     voice_channel.resume()
 
 @client.command()
-async def help(ctx):
+async def bot_help(ctx):
     embed = discord.Embed(title="Commands", description="List of commands are:", color=0xeee657)
 
     embed.add_field(name="!ping", value="Returns Pong!", inline=False)
@@ -140,6 +140,9 @@ async def help(ctx):
     embed.add_field(name="!resume", value="Resumes the song", inline=False)
 
     await ctx.send(embed=embed)
+
+
+
 
 
 @client.command()
